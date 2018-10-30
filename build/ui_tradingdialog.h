@@ -54,13 +54,13 @@ public:
     QLabel *labelBTC;
     QHBoxLayout *horizontalLayout;
     QLabel *label232_2;
-    QLabel *DPAvailableLabel;
-    QLabel *labelDP;
+    QLabel *DINGOAvailableLabel;
+    QLabel *labelDINGO;
     QPushButton *Buy_Max_Amount;
     QLineEdit *UnitsInput;
     QLabel *label_4;
     QPushButton *Sell_Max_Amount;
-    QLineEdit *UnitsInputDP;
+    QLineEdit *UnitsInputDINGO;
     QLabel *label_22;
     QLabel *label_6;
     QComboBox *BuyBidcomboBox;
@@ -77,14 +77,14 @@ public:
     QLabel *label_19;
     QLabel *SellCostLabel;
     QLabel *label_17;
-    QPushButton *BuyDP;
-    QPushButton *SellDPBTN;
+    QPushButton *BuyDINGO;
+    QPushButton *SellDINGOBTN;
     QTableWidget *BidsTable;
     QLabel *BtcDemand;
     QLabel *AsksCount;
     QLabel *BtcSupply;
-    QLabel *DPDemand;
-    QLabel *DPSupply;
+    QLabel *DINGODemand;
+    QLabel *DINGOSupply;
     QLabel *BidsCount;
     QWidget *tab;
     QGridLayout *gridLayout_7;
@@ -110,7 +110,7 @@ public:
     QLabel *label_8;
     QHBoxLayout *horizontalLayout_8;
     QLabel *label_29;
-    QLabel *BittrexDPLabel;
+    QLabel *BittrexDINGOLabel;
     QLabel *label_30;
     QHBoxLayout *horizontalLayout_10;
     QLabel *label_36;
@@ -133,16 +133,16 @@ public:
     QWidget *BalanceTab;
     QGridLayout *gridLayout_2;
     QLabel *label_11;
-    QLabel *DPBalanceLabel;
+    QLabel *DINGOBalanceLabel;
     QLabel *label_12;
     QLabel *BitcoinBalanceLabel;
     QSpacerItem *horizontalSpacer_4;
     QLabel *label_13;
-    QLabel *DPAvailableLabel_2;
+    QLabel *DINGOAvailableLabel_2;
     QLabel *label_15;
     QLabel *BitcoinAvailableLabel;
     QLabel *label_14;
-    QLabel *DPPendingLabel;
+    QLabel *DINGOPendingLabel;
     QLabel *label_31;
     QLabel *BitcoinPendingLabel;
     QPushButton *GenDepositBTN;
@@ -387,8 +387,8 @@ public:
 
         horizontalLayout->addWidget(label232_2);
 
-        DPAvailableLabel = new QLabel(BuyTab);
-        DPAvailableLabel->setObjectName(QStringLiteral("DPAvailableLabel"));
+        DINGOAvailableLabel = new QLabel(BuyTab);
+        DINGOAvailableLabel->setObjectName(QStringLiteral("DINGOAvailableLabel"));
         QPalette palette1;
         palette1.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -435,17 +435,17 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette1.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        DPAvailableLabel->setPalette(palette1);
-        DPAvailableLabel->setFont(font3);
-        DPAvailableLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
+        DINGOAvailableLabel->setPalette(palette1);
+        DINGOAvailableLabel->setFont(font3);
+        DINGOAvailableLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
-        horizontalLayout->addWidget(DPAvailableLabel);
+        horizontalLayout->addWidget(DINGOAvailableLabel);
 
-        labelDP = new QLabel(BuyTab);
-        labelDP->setObjectName(QStringLiteral("labelDP"));
-        labelDP->setFont(font3);
+        labelDINGO = new QLabel(BuyTab);
+        labelDINGO->setObjectName(QStringLiteral("labelDINGO"));
+        labelDINGO->setFont(font3);
 
-        horizontalLayout->addWidget(labelDP);
+        horizontalLayout->addWidget(labelDINGO);
 
 
         gridLayout_6->addLayout(horizontalLayout, 3, 8, 1, 2);
@@ -480,12 +480,12 @@ public:
 
         gridLayout_6->addWidget(Sell_Max_Amount, 4, 8, 1, 1);
 
-        UnitsInputDP = new QLineEdit(BuyTab);
-        UnitsInputDP->setObjectName(QStringLiteral("UnitsInputDP"));
-        UnitsInputDP->setMinimumSize(QSize(0, 0));
-        UnitsInputDP->setFont(font5);
+        UnitsInputDINGO = new QLineEdit(BuyTab);
+        UnitsInputDINGO->setObjectName(QStringLiteral("UnitsInputDINGO"));
+        UnitsInputDINGO->setMinimumSize(QSize(0, 0));
+        UnitsInputDINGO->setFont(font5);
 
-        gridLayout_6->addWidget(UnitsInputDP, 4, 9, 1, 1);
+        gridLayout_6->addWidget(UnitsInputDINGO, 4, 9, 1, 1);
 
         label_22 = new QLabel(BuyTab);
         label_22->setObjectName(QStringLiteral("label_22"));
@@ -679,15 +679,15 @@ public:
 
         gridLayout_6->addLayout(horizontalLayout_2, 6, 8, 1, 2);
 
-        BuyDP = new QPushButton(BuyTab);
-        BuyDP->setObjectName(QStringLiteral("BuyDP"));
+        BuyDINGO = new QPushButton(BuyTab);
+        BuyDINGO->setObjectName(QStringLiteral("BuyDINGO"));
 
-        gridLayout_6->addWidget(BuyDP, 7, 3, 1, 1);
+        gridLayout_6->addWidget(BuyDINGO, 7, 3, 1, 1);
 
-        SellDPBTN = new QPushButton(BuyTab);
-        SellDPBTN->setObjectName(QStringLiteral("SellDPBTN"));
+        SellDINGOBTN = new QPushButton(BuyTab);
+        SellDINGOBTN->setObjectName(QStringLiteral("SellDINGOBTN"));
 
-        gridLayout_6->addWidget(SellDPBTN, 7, 9, 1, 1);
+        gridLayout_6->addWidget(SellDINGOBTN, 7, 9, 1, 1);
 
         BidsTable = new QTableWidget(BuyTab);
         BidsTable->setObjectName(QStringLiteral("BidsTable"));
@@ -719,20 +719,20 @@ public:
 
         gridLayout_6->addWidget(BtcSupply, 1, 9, 1, 3);
 
-        DPDemand = new QLabel(BuyTab);
-        DPDemand->setObjectName(QStringLiteral("DPDemand"));
+        DINGODemand = new QLabel(BuyTab);
+        DINGODemand->setObjectName(QStringLiteral("DINGODemand"));
         QFont font6;
         font6.setPointSize(8);
-        DPDemand->setFont(font6);
-        DPDemand->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        DINGODemand->setFont(font6);
+        DINGODemand->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_6->addWidget(DPDemand, 0, 1, 1, 5);
+        gridLayout_6->addWidget(DINGODemand, 0, 1, 1, 5);
 
-        DPSupply = new QLabel(BuyTab);
-        DPSupply->setObjectName(QStringLiteral("DPSupply"));
-        DPSupply->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+        DINGOSupply = new QLabel(BuyTab);
+        DINGOSupply->setObjectName(QStringLiteral("DINGOSupply"));
+        DINGOSupply->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        gridLayout_6->addWidget(DPSupply, 0, 9, 1, 3);
+        gridLayout_6->addWidget(DINGOSupply, 0, 9, 1, 3);
 
         BidsCount = new QLabel(BuyTab);
         BidsCount->setObjectName(QStringLiteral("BidsCount"));
@@ -1021,8 +1021,8 @@ public:
 
         horizontalLayout_8->addWidget(label_29);
 
-        BittrexDPLabel = new QLabel(tab);
-        BittrexDPLabel->setObjectName(QStringLiteral("BittrexDPLabel"));
+        BittrexDINGOLabel = new QLabel(tab);
+        BittrexDINGOLabel->setObjectName(QStringLiteral("BittrexDINGOLabel"));
         QPalette palette7;
         palette7.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette7.setBrush(QPalette::Active, QPalette::Button, brush1);
@@ -1069,12 +1069,12 @@ public:
         palette7.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
         palette7.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
         palette7.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        BittrexDPLabel->setPalette(palette7);
-        BittrexDPLabel->setFont(font7);
-        BittrexDPLabel->setAutoFillBackground(false);
-        BittrexDPLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
+        BittrexDINGOLabel->setPalette(palette7);
+        BittrexDINGOLabel->setFont(font7);
+        BittrexDINGOLabel->setAutoFillBackground(false);
+        BittrexDINGOLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
 
-        horizontalLayout_8->addWidget(BittrexDPLabel);
+        horizontalLayout_8->addWidget(BittrexDINGOLabel);
 
         label_30 = new QLabel(tab);
         label_30->setObjectName(QStringLiteral("label_30"));
@@ -1244,12 +1244,12 @@ public:
 
         gridLayout_2->addWidget(label_11, 0, 0, 1, 2);
 
-        DPBalanceLabel = new QLabel(BalanceTab);
-        DPBalanceLabel->setObjectName(QStringLiteral("DPBalanceLabel"));
-        DPBalanceLabel->setFont(font4);
-        DPBalanceLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
+        DINGOBalanceLabel = new QLabel(BalanceTab);
+        DINGOBalanceLabel->setObjectName(QStringLiteral("DINGOBalanceLabel"));
+        DINGOBalanceLabel->setFont(font4);
+        DINGOBalanceLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
 
-        gridLayout_2->addWidget(DPBalanceLabel, 0, 3, 1, 1);
+        gridLayout_2->addWidget(DINGOBalanceLabel, 0, 3, 1, 1);
 
         label_12 = new QLabel(BalanceTab);
         label_12->setObjectName(QStringLiteral("label_12"));
@@ -1274,12 +1274,12 @@ public:
 
         gridLayout_2->addWidget(label_13, 1, 0, 1, 2);
 
-        DPAvailableLabel_2 = new QLabel(BalanceTab);
-        DPAvailableLabel_2->setObjectName(QStringLiteral("DPAvailableLabel_2"));
-        DPAvailableLabel_2->setFont(font4);
-        DPAvailableLabel_2->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
+        DINGOAvailableLabel_2 = new QLabel(BalanceTab);
+        DINGOAvailableLabel_2->setObjectName(QStringLiteral("DINGOAvailableLabel_2"));
+        DINGOAvailableLabel_2->setFont(font4);
+        DINGOAvailableLabel_2->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
 
-        gridLayout_2->addWidget(DPAvailableLabel_2, 1, 3, 1, 1);
+        gridLayout_2->addWidget(DINGOAvailableLabel_2, 1, 3, 1, 1);
 
         label_15 = new QLabel(BalanceTab);
         label_15->setObjectName(QStringLiteral("label_15"));
@@ -1300,12 +1300,12 @@ public:
 
         gridLayout_2->addWidget(label_14, 2, 0, 1, 2);
 
-        DPPendingLabel = new QLabel(BalanceTab);
-        DPPendingLabel->setObjectName(QStringLiteral("DPPendingLabel"));
-        DPPendingLabel->setFont(font4);
-        DPPendingLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
+        DINGOPendingLabel = new QLabel(BalanceTab);
+        DINGOPendingLabel->setObjectName(QStringLiteral("DINGOPendingLabel"));
+        DINGOPendingLabel->setFont(font4);
+        DINGOPendingLabel->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
 
-        gridLayout_2->addWidget(DPPendingLabel, 2, 3, 1, 1);
+        gridLayout_2->addWidget(DINGOPendingLabel, 2, 3, 1, 1);
 
         label_31 = new QLabel(BalanceTab);
         label_31->setObjectName(QStringLiteral("label_31"));
@@ -1421,9 +1421,9 @@ public:
         label_13->raise();
         label_11->raise();
         BitcoinBalanceLabel->raise();
-        DPBalanceLabel->raise();
-        DPAvailableLabel_2->raise();
-        DPPendingLabel->raise();
+        DINGOBalanceLabel->raise();
+        DINGOAvailableLabel_2->raise();
+        DINGOPendingLabel->raise();
         BitcoinAvailableLabel->raise();
         BitcoinPendingLabel->raise();
         label_33->raise();
@@ -1565,8 +1565,8 @@ public:
         BtcAvailableLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         labelBTC->setText(QApplication::translate("tradingDialog", "BTC", 0));
         label232_2->setText(QApplication::translate("tradingDialog", "DINGO Available:", 0));
-        DPAvailableLabel->setText(QApplication::translate("tradingDialog", " 0.00000000 ", 0));
-        labelDP->setText(QApplication::translate("tradingDialog", " DINGO", 0));
+        DINGOAvailableLabel->setText(QApplication::translate("tradingDialog", " 0.00000000 ", 0));
+        labelDINGO->setText(QApplication::translate("tradingDialog", " DINGO", 0));
         Buy_Max_Amount->setText(QApplication::translate("tradingDialog", "Max", 0));
         label_4->setText(QApplication::translate("tradingDialog", "DINGO", 0));
         Sell_Max_Amount->setText(QApplication::translate("tradingDialog", "Max", 0));
@@ -1580,13 +1580,13 @@ public:
         label_19->setText(QApplication::translate("tradingDialog", "Total w/ 0.25% Fee ", 0));
         SellCostLabel->setText(QApplication::translate("tradingDialog", " 0.00000000", 0));
         label_17->setText(QApplication::translate("tradingDialog", " BTC", 0));
-        BuyDP->setText(QApplication::translate("tradingDialog", "Buy DINGO", 0));
-        SellDPBTN->setText(QApplication::translate("tradingDialog", "Sell DINGO", 0));
+        BuyDINGO->setText(QApplication::translate("tradingDialog", "Buy DINGO", 0));
+        SellDINGOBTN->setText(QApplication::translate("tradingDialog", "Sell DINGO", 0));
         BtcDemand->setText(QApplication::translate("tradingDialog", "0.00000000 BTC", 0));
         AsksCount->setText(QApplication::translate("tradingDialog", "Asks: 0000", 0));
         BtcSupply->setText(QApplication::translate("tradingDialog", "0.00000000 BTC", 0));
-        DPDemand->setText(QApplication::translate("tradingDialog", "Demand: 0.00000000 DINGO", 0));
-        DPSupply->setText(QApplication::translate("tradingDialog", "Supply: 0.00000000 DINGO", 0));
+        DINGODemand->setText(QApplication::translate("tradingDialog", "Demand: 0.00000000 DINGO", 0));
+        DINGOSupply->setText(QApplication::translate("tradingDialog", "Supply: 0.00000000 DINGO", 0));
         BidsCount->setText(QApplication::translate("tradingDialog", "Bids: 0000", 0));
         TradingTabWidget->setTabText(TradingTabWidget->indexOf(BuyTab), QApplication::translate("tradingDialog", "Trade", 0));
         label_21->setText(QApplication::translate("tradingDialog", "Lowest price:", 0));
@@ -1606,7 +1606,7 @@ public:
         label_27->setText(QApplication::translate("tradingDialog", "Amount:", 0));
         label_8->setText(QApplication::translate("tradingDialog", "Address:", 0));
         label_29->setText(QApplication::translate("tradingDialog", "DINGO Balance:", 0));
-        BittrexDPLabel->setText(QApplication::translate("tradingDialog", " 0.00000000", 0));
+        BittrexDINGOLabel->setText(QApplication::translate("tradingDialog", " 0.00000000", 0));
         label_30->setText(QApplication::translate("tradingDialog", "DINGO", 0));
         label_36->setText(QApplication::translate("tradingDialog", "BTC Balance:", 0));
         BittrexBTCLabel->setText(QApplication::translate("tradingDialog", " 0.00000000", 0));
@@ -1623,15 +1623,15 @@ public:
         TradingTabWidget->setTabText(TradingTabWidget->indexOf(OpenOrders), QApplication::translate("tradingDialog", "Open Orders", 0));
         TradingTabWidget->setTabText(TradingTabWidget->indexOf(TradeHistory), QApplication::translate("tradingDialog", "Trade history", 0));
         label_11->setText(QApplication::translate("tradingDialog", "DINGO Balance:", 0));
-        DPBalanceLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
+        DINGOBalanceLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         label_12->setText(QApplication::translate("tradingDialog", "BTC Balance:", 0));
         BitcoinBalanceLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         label_13->setText(QApplication::translate("tradingDialog", "DINGO Available:", 0));
-        DPAvailableLabel_2->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
+        DINGOAvailableLabel_2->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         label_15->setText(QApplication::translate("tradingDialog", "BTC Available:", 0));
         BitcoinAvailableLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         label_14->setText(QApplication::translate("tradingDialog", "DINGO Pending:", 0));
-        DPPendingLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
+        DINGOPendingLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         label_31->setText(QApplication::translate("tradingDialog", "BTC Pending:", 0));
         BitcoinPendingLabel->setText(QApplication::translate("tradingDialog", "0.00000000", 0));
         GenDepositBTN->setText(QApplication::translate("tradingDialog", "Generate DINGO Coin Deposit Address", 0));

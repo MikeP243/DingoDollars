@@ -139,12 +139,12 @@ QT_MOC_LITERAL(90, 1558, 28)
     "on_BuyBidcomboBox_currentIndexChanged\0"
     "arg1\0on_UnitsInput_textChanged\0"
     "on_BuyBidPriceEdit_textChanged\0"
-    "on_BuyDP_clicked\0CalculateSellCostLabel\0"
+    "on_BuyDINGO_clicked\0CalculateSellCostLabel\0"
     "on_Sell_Max_Amount_clicked\0"
     "on_SellBidcomboBox_currentIndexChanged\0"
-    "on_UnitsInputDP_textChanged\0"
+    "on_UnitsInputDINGO_textChanged\0"
     "on_SellBidPriceEdit_textChanged\0"
-    "on_SellDPBTN_clicked\0CalculateCSReceiveLabel\0"
+    "on_SellDINGOBTN_clicked\0CalculateCSReceiveLabel\0"
     "on_CSUnitsInput_textChanged\0"
     "on_CSUnitsBtn_clicked\0on_CS_Max_Amount_clicked\0"
     "on_Withdraw_Max_Amount_clicked\0"
@@ -156,8 +156,8 @@ QT_MOC_LITERAL(90, 1558, 28)
     "on_DepositCopyButton_clicked\0"
     "SetExchangeInfoTextLabels\0"
     "BittrexTimeStampToReadable\0DateTime\0"
-    "CancelOrder\0Orderid\0BuyDP\0OrderType\0"
-    "Quantity\0Rate\0SellDP\0Withdraw\0Amount\0"
+    "CancelOrder\0Orderid\0BuyDINGO\0OrderType\0"
+    "Quantity\0Rate\0SellDINGO\0Withdraw\0Amount\0"
     "Address\0Coin\0GetMarketHistory\0"
     "GetMarketSummary\0GetOrderBook\0"
     "GetOpenOrders\0GetAccountHistory\0"
@@ -341,13 +341,13 @@ void tradingDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 21: _t->on_BuyBidcomboBox_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 22: _t->on_UnitsInput_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 23: _t->on_BuyBidPriceEdit_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 24: _t->on_BuyDP_clicked(); break;
+        case 24: _t->on_BuyDINGO_clicked(); break;
         case 25: _t->CalculateSellCostLabel(); break;
         case 26: _t->on_Sell_Max_Amount_clicked(); break;
         case 27: _t->on_SellBidcomboBox_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 28: _t->on_UnitsInputDP_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 28: _t->on_UnitsInputDINGO_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 29: _t->on_SellBidPriceEdit_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 30: _t->on_SellDPBTN_clicked(); break;
+        case 30: _t->on_SellDINGOBTN_clicked(); break;
         case 31: _t->CalculateCSReceiveLabel(); break;
         case 32: _t->on_CSUnitsInput_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 33: _t->on_CSUnitsBtn_clicked(); break;
@@ -365,9 +365,9 @@ void tradingDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
         case 44: { QString _r = _t->CancelOrder((*reinterpret_cast< QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 45: { QString _r = _t->BuyDP((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])));
+        case 45: { QString _r = _t->BuyDINGO((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 46: { QString _r = _t->SellDP((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])));
+        case 46: { QString _r = _t->SellDINGO((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
         case 47: { QString _r = _t->Withdraw((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;

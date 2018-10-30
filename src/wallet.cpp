@@ -1032,7 +1032,7 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
         if (nDebit > 0)
         {
             // Don't report 'change' txouts
-        // DPNOTE: CoinControl possible fix related... with HD wallet we need to report change?
+        // DINGONOTE: CoinControl possible fix related... with HD wallet we need to report change?
             if (pwallet->IsChange(txout))
                 continue;
         }
@@ -1633,7 +1633,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
                 continue;
 
             int nDepth = pcoin->GetDepthInMainChain(false);
-            if (nDepth <= 0) // DPNOTE: coincontrol fix / ignore 0 confirm
+            if (nDepth <= 0) // DINGONOTE: coincontrol fix / ignore 0 confirm
                 continue;
 
             // do not use IX for inputs that have less then 6 blockchain confirmations
@@ -1690,7 +1690,7 @@ void CWallet::AvailableCoinsMN(vector<COutput>& vCoins, bool fOnlyConfirmed, con
                 continue;
 
             int nDepth = pcoin->GetDepthInMainChain();
-            if (nDepth <= 0) // DPNOTE: coincontrol fix / ignore 0 confirm
+            if (nDepth <= 0) // DINGONOTE: coincontrol fix / ignore 0 confirm
                 continue;
 
             // do not use IX for inputs that have less then 6 blockchain confirmations
@@ -1985,7 +1985,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1DP
+    //if we're doing only denominated, we need to round up to the nearest .1DINGO
     if(coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH(int64_t v, darkSendDenominations)
@@ -1993,7 +1993,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
             BOOST_FOREACH(const COutput& out, vCoins)
             {
                 if(out.tx->vout[out.i].nValue == v                                            //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1DP over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1DINGO over
                 ){
                     CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
                     int rounds = GetInputDarksendRounds(vin);
@@ -2100,11 +2100,11 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
 
             // Function returns as follows:
             //
-            // bit 0 - 1000DP+1 ( bit on if present )
-            // bit 1 - 100DP+1
-            // bit 2 - 10DP+1
-            // bit 3 - 1DP+1
-            // bit 4 - .1DP+1
+            // bit 0 - 1000DINGO+1 ( bit on if present )
+            // bit 1 - 100DINGO+1
+            // bit 2 - 10DINGO+1
+            // bit 3 - 1DINGO+1
+            // bit 4 - .1DINGO+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
 

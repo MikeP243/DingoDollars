@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>DrillitBits-Qt</string>
+	<string>DingoDollars-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>DrillitBits-Qt</string>
+	<string>DingoDollars-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.DrillitBits.DrillitBits-Qt</string>
+	<string>co.DingoDollars.DingoDollars-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.DrillitBits.DrillitBitsPayment</string>
+            <string>co.DingoDollars.DingoDollarsPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>DrillitBits</string>
+              <string>DingoDollars</string>
             </array>
           </dict>
         </array>

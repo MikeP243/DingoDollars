@@ -7,7 +7,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-See readme-qt.rst for instructions on building DrillitBits QT, the
+See readme-qt.rst for instructions on building DingoDollars QT, the
 graphical user interface.
 
 WINDOWS BUILD NOTES
@@ -76,9 +76,9 @@ make -f Makefile.mingw
 mkdir miniupnpc
 cp *.h miniupnpc/
 
-DrillitBits
+DingoDollars
 -------
 DOS prompt:
-cd \DrillitBits\src
+cd \DingoDollars\src
 mingw32-make -f makefile.mingw
-strip DrillitBitsd.exe
+strip DingoDollarsd.exe

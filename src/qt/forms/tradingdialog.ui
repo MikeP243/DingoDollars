@@ -709,7 +709,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="DPAvailableLabel">
+          <widget class="QLabel" name="DINGOAvailableLabel">
            <property name="palette">
             <palette>
              <active>
@@ -1140,7 +1140,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="labelDP">
+          <widget class="QLabel" name="labelDINGO">
            <property name="font">
             <font>
              <weight>75</weight>
@@ -1203,7 +1203,7 @@
         </widget>
        </item>
        <item row="4" column="9">
-        <widget class="QLineEdit" name="UnitsInputDP">
+        <widget class="QLineEdit" name="UnitsInputDINGO">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -2237,14 +2237,14 @@
         </layout>
        </item>
        <item row="7" column="3">
-        <widget class="QPushButton" name="BuyDP">
+        <widget class="QPushButton" name="BuyDINGO">
          <property name="text">
           <string>Buy DINGO</string>
          </property>
         </widget>
        </item>
        <item row="7" column="9">
-        <widget class="QPushButton" name="SellDPBTN">
+        <widget class="QPushButton" name="SellDINGOBTN">
          <property name="text">
           <string>Sell DINGO</string>
          </property>
@@ -2313,7 +2313,7 @@
         </widget>
        </item>
        <item row="0" column="1" colspan="5">
-        <widget class="QLabel" name="DPDemand">
+        <widget class="QLabel" name="DINGODemand">
          <property name="font">
           <font>
            <pointsize>8</pointsize>
@@ -2328,7 +2328,7 @@
         </widget>
        </item>
        <item row="0" column="9" colspan="3">
-        <widget class="QLabel" name="DPSupply">
+        <widget class="QLabel" name="DINGOSupply">
          <property name="text">
           <string>Supply: 0.00000000 DINGO</string>
          </property>
@@ -3870,7 +3870,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="BittrexDPLabel">
+          <widget class="QLabel" name="BittrexDINGOLabel">
            <property name="palette">
             <palette>
              <active>
@@ -4922,7 +4922,7 @@
         </widget>
        </item>
        <item row="0" column="3">
-        <widget class="QLabel" name="DPBalanceLabel">
+        <widget class="QLabel" name="DINGOBalanceLabel">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -4993,7 +4993,7 @@
         </widget>
        </item>
        <item row="1" column="3">
-        <widget class="QLabel" name="DPAvailableLabel_2">
+        <widget class="QLabel" name="DINGOAvailableLabel_2">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -5051,7 +5051,7 @@
         </widget>
        </item>
        <item row="2" column="3">
-        <widget class="QLabel" name="DPPendingLabel">
+        <widget class="QLabel" name="DINGOPendingLabel">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -5356,9 +5356,9 @@
       <zorder>label_13</zorder>
       <zorder>label_11</zorder>
       <zorder>BitcoinBalanceLabel</zorder>
-      <zorder>DPBalanceLabel</zorder>
-      <zorder>DPAvailableLabel_2</zorder>
-      <zorder>DPPendingLabel</zorder>
+      <zorder>DINGOBalanceLabel</zorder>
+      <zorder>DINGOAvailableLabel_2</zorder>
+      <zorder>DINGOPendingLabel</zorder>
       <zorder>BitcoinAvailableLabel</zorder>
       <zorder>BitcoinPendingLabel</zorder>
       <zorder>label_33</zorder>
