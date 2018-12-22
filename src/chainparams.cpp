@@ -137,6 +137,16 @@ public:
 		vSeeds.push_back(CDNSSeedData("0","124.187.81.212"));
 		vSeeds.push_back(CDNSSeedData("1","91.121.71.172"));
 		vSeeds.push_back(CDNSSeedData("2","54.37.16.231"));
+	    	vSeeds.push_back(CDNSSeedData("3","167.179.69.58"));
+		vSeeds.push_back(CDNSSeedData("4","107.191.40.149"));
+		vSeeds.push_back(CDNSSeedData("5","27.72.233.173"));
+	    	vSeeds.push_back(CDNSSeedData("6","95.31.104.90"));
+		vSeeds.push_back(CDNSSeedData("7","37.187.135.212"));
+		vSeeds.push_back(CDNSSeedData("8","45.76.250.125"));
+	    	vSeeds.push_back(CDNSSeedData("9","144.202.24.226"));
+		vSeeds.push_back(CDNSSeedData("10","45.32.223.182"));
+		vSeeds.push_back(CDNSSeedData("11","110.8.4.212"));
+	    	vSeeds.push_back(CDNSSeedData("12","66.42.84.12"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
